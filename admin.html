@@ -18,13 +18,18 @@
     <h1>Xin Chào
         <font style="color: red;">ADMIN</font>, Giao diện Admin hiện đang bị khóa bởi 1 người có quyền cao hơn bạn</h1>
     <div>
-        <a href="" id="logout">Đăng xuất</a>
+        <a href="#" id="logout">Đăng xuất</a>
     </div>
     <script>
-       var logout = document.querySelector('#logout')
-        logout.onclick = function() {
+        // var logout = document.querySelector('#logout')
+        // logout.onclick = function() {
+        //     alert('Đăng xuất thành công');
+        //     window.location.href = "index.html";
+        // }
+        document.getElementById('logout').onclick = function() {
             alert('Đăng xuất thành công');
             window.location.href = "index.html";
+
         }
     </script>
 </body>

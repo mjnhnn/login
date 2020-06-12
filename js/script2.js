@@ -13,10 +13,8 @@ var acc = document.querySelector('.acc');
 var pass = document.querySelector('.pass');
 console.log(acc)
 submit.onclick = function() {
-
     if (acc.value == "admin" && pass.value == "admin") {
         alert('Đăng nhập thành công');
-
         window.location.href = "admin.html";
         return true;
     }
