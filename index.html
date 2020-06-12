@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .ligh {
+            color: antiquewhite;
+        }
+        
+        .red {
+            filter: grayscale(100%);
+            transition: all linear 1s;
+        }
+        
+        fieldset {
+            text-align: center;
+            height: 90vh;
+        }
+        
+        legend {
+            text-align: left;
+            font-family: 'Lobster', cursive;
+            color: beige;
+            background: transparent;
+            font-size: 45px;
+            line-height: 22px;
+            letter-spacing: 0px;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .legend__wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        input[type='text'],
+        input[type='password'],
+        input[type='button'] {
+            width: 100%;
+            font-size: 20px;
+            height: 40px;
+        }
+        
+        input[type='button'] {
+            margin-top: 25px;
+            font-family: 'Lobster', cursive;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        
+        label {
+            margin: 20px 0 10px;
+            font-size: 30px;
+            font-family: 'Lobster', cursive;
+        }
+        
+        img {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" contenteditable="false">
+        <img width="100%" height="100%" src="https://i.ytimg.com/vi/gpV48sIOBfw/maxresdefault.jpg" alt="">
+        <p id="p"></p>
+        <form action="/action_page.php">
+            <fieldset>
+                <legend class="ligh">Đăng nhập</legend>
+
+                <div class="legend__wrap">
+                    <label class="ligh" for="fname">tài khoản</label>
+                    <input class="acc" type="text" placeholder="Nhập tài khoản">
+                    <label class="ligh" for="lname">mật khẩu</label>
+                    <input class="pass" type="password" placeholder="Nhập mật khẩu">
+                </div>
+                <input type="button" value="Đăng nhập">
+            </fieldset>
+        </form>
+    </div>
+    <script src="js/script2.js"></script>
+</body>
+
+</html>
